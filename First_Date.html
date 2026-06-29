@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A Proposal for You ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:linear-gradient(135deg,#0F172A,#111827,#1E293B);
+color:white;
+overflow-x:hidden;
+scroll-behavior:smooth;
+}
+
+/* Animated Stars */
+
+.stars{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+overflow:hidden;
+z-index:-1;
+}
+
+.star{
+position:absolute;
+background:white;
+width:2px;
+height:2px;
+border-radius:50%;
+animation:twinkle 4s infinite;
+opacity:.7;
+}
+
+@keyframes twinkle{
+0%,100%{opacity:.2;}
+50%{opacity:1;}
+}
+
+.container{
+margin:auto;
+padding:60px 20px;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.15);
+border-radius:25px;
+padding:50px;
+margin:60px 0;
+box-shadow:0 15px 40px rgba(0,0,0,.35);
+animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+h1{
+font-family:'Playfair Display',serif;
+font-size:54px;
+text-align:center;
+margin-bottom:20px;
+color:#FFD166;
+}
+
+h2{
+font-family:'Playfair Display',serif;
+margin-bottom:25px;
+color:#FFD166;
+}
+
+p{
+font-size:18px;
+line-height:1.9;
+}
+
+.center{
+text-align:center;
+}
+
+button{
+padding:18px 40px;
+border:none;
+border-radius:50px;
+background:#F472B6;
+color:white;
+font-size:18px;
+cursor:pointer;
+margin-top:30px;
+transition:.35s;
+}
+
+button:hover{
+transform:scale(1.08);
+background:#FB7185;
+}
+
+.timeline{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+margin-top:35px;
+gap:20px;
+}
+
+.step{
+flex:1;
+min-width:120px;
+text-align:center;
+padding:18px;
+background:rgba(255,255,255,.08);
+border-radius:18px;
+}
+
+.bar{
+margin:20px 0;
+}
+
+.progress{
+height:12px;
+background:#FFD166;
+border-radius:50px;
+animation:grow 2s;
+}
+
+@keyframes grow{
+from{width:0;}
+}
+
+.hidden{
+display:none;
+}
+
+#yesScreen{
+text-align:center;
+padding:80px 20px;
+}
+
+.bigheart{
+font-size:90px;
+animation:pulse 1.4s infinite;
+}
+
+@keyframes pulse{
+50%{transform:scale(1.15);}
+}
+
+footer{
+text-align:center;
+padding:50px;
+color:#ccc;
+}
+
+.flip-container{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.flip-card{
+flex:1;
+min-width:220px;
+height:170px;
+perspective:1000px;
+}
+
+.flip-inner{
+position:relative;
+width:100%;
+height:100%;
+transition:transform .8s;
+transform-style:preserve-3d;
+}
+
+.flip-card:hover .flip-inner{
+transform:rotateY(180deg);
+}
+
+.flip-front,.flip-back{
+position:absolute;
+width:100%;
+height:100%;
+backface-visibility:hidden;
+border-radius:20px;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+text-align:center;
+background:rgba(255,255,255,.08);
+}
+
+.flip-back{
+transform:rotateY(180deg);
+background:#F472B6;
+}
+
+.confetti{
+position:fixed;
+font-size:24px;
+animation:fall 5s linear forwards;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-100px);
+}
+100%{
+transform:translateY(120vh);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<div class="container">
+
+<div class="card center">
+
+<h1>Welcome Love ❤️</h1>
+
+<p>
+Priority: High<br>
+Status: Waiting for Approval ❤️
+</p>
+
+<br>
+
+<p>
+
+I write code every day but today I wrote something from my heart.,
+
+<br><br>
+
+After countless conversations...
+
+A few unexpected smiles...
+
+And way more butterflies than I'd like to admit...
+
+I'd like to officially request something special.
+
+</p>
+
+<button onclick="document.getElementById('proposal').scrollIntoView({behavior:'smooth'})">
+
+Review Proposal
+
+</button>
+
+</div>
+
+<div class="card" id="proposal">
+
+<h2>Proposal #001</h2>
+
+<p>
+
+<b>Project Name</b><br>
+Our First Date
+
+<br><br>
+
+<b>Objective</b><br>
+
+To explore whether the spark between us feels even more real when our conversations are no longer just words on a screen—but shared in person, with smiles, silence, and everything in betwee
+
+<br><br>
+
+
+</div>
+<div class="card">
+
+<h2>Possible Side Effects ❤️</h2>
+
+<p>
+
+😊 Smiling the entire day
+
+<br><br>
+
+❤️ Butterflies that refuse to leave
+
+<br><br>
+
+🤝 Accidentally holding hands...
+
+because neither of us wants to let go.
+
+<br><br>
+
+🤗 A warm hug that feels like home.
+
+<br><br>
+
+💋 Maybe... if the moment feels perfect...
+
+our first kiss.
+
+<br><br>
+
+📅 And hopefully...
+
+planning our second date before the first one even ends.
+
+</p>
+
+</div>
+<div class="card">
+
+<h2>Suggested Agenda</h2>
+
+<div class="timeline">
+
+<div class="step">☕ Coffee</div>
+
+<div class="step">🅿️ Parking Lot</div>
+
+<div class="step">🚗 Long Drive</div>
+
+<div class="step">🍝 Lunch</div>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h2>One Last Question...</h2>
+
+<p class="center">
+
+Would you do me the honor of going on our first date together?
+
+</p>
+
+<div class="center">
+
+<button onclick="accepted()">
+
+❤️ YES, ABSOLUTELY
+
+</button>
+
+<button>
+
+🤔 Need More Convincing?
+
+</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Little Secrets</h2>
+
+<div class="flip-container">
+
+<div class="flip-card">
+
+<div class="flip-inner">
+
+<div class="flip-front">
+Fun Fact #1
+</div>
+
+<div class="flip-back">
+Every animation on this page has one purpose...
+
+to make you smile.
+</div>
+
+</div>
+
+</div>
+
+<div class="flip-card">
+
+<div class="flip-inner">
+
+<div class="flip-front">
+Fun Fact #2
+</div>
+
+<div class="flip-back">
+You're worth making a website for.
+</div>
+
+</div>
+
+</div>
+
+<div class="flip-card">
+
+<div class="flip-inner">
+
+<div class="flip-front">
+Fun Fact #3
+</div>
+
+<div class="flip-back">
+This isn't just HTML and CSS.
+
+It's excitement...
+wrapped in code.
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="yesScreen" class="hidden">
+
+<div class="bigheart">
+
+❤️
+
+</div>
+
+<h1>
+
+Proposal Approved
+
+</h1>
+
+<p>
+
+Mission Accomplished.
+
+Now all that's left...
+
+is choosing a day that becomes one of our favorite memories.
+
+</p>
+
+<br>
+
+<h2>
+
+See you soon, handsome. ❤️
+
+</h2>
+
+</div>
+
+<footer>
+
+<div class="card center">
+
+<h2>A Little Note For You ❤️</h2>
+
+<p>
+
+I've built many websites.
+
+But this one is different.
+
+Because every line of code carries a little excitement,
+a little nervousness,
+and a lot of hope.
+
+No matter what happens...
+
+thank you for being someone
+worth creating this for.
+
+❤️
+
+</p>
+
+</div>
+
+</footer>
+
+</div>
+
+<script>
+
+// stars
+
+for(let i=0;i<120;i++){
+
+let star=document.createElement('div');
+
+star.className='star';
+
+star.style.left=Math.random()*100+'%';
+
+star.style.top=Math.random()*100+'%';
+
+star.style.animationDelay=Math.random()*5+'s';
+
+document.querySelector('.stars').appendChild(star);
+
+}
+
+function moreDetails(){
+
+alert("Dress Code: Whatever makes you feel confident.\n\nAgenda: Laugh, talk, enjoy each other's company.\n\nExpected Outcome: Hopefully planning Date #2 ❤️");
+
+}
+
+function accepted(){
+
+document.getElementById("yesScreen").classList.remove("hidden");
+
+document.getElementById("yesScreen").scrollIntoView({behavior:'smooth'});
+
+for(let i=0;i<120;i++){
+
+let c=document.createElement("div");
+
+c.className="confetti";
+
+c.innerHTML=["❤️","✨","💖","🌹"][Math.floor(Math.random()*4)];
+
+c.style.left=Math.random()*100+"vw";
+
+c.style.animationDuration=(3+Math.random()*3)+"s";
+
+document.body.appendChild(c);
+
+setTimeout(()=>c.remove(),6000);
+
+}
+
+}
+
+console.log("Developer Secret:");
+console.log("if (you.clickedYes) {");
+console.log("   happiness++;");
+console.log("   memories++;");
+console.log("   futureDates++;");
+console.log("}");
+
+</script>
+
+</body>
+</html>
